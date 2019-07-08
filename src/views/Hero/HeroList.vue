@@ -1,7 +1,7 @@
 <template>
       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         <h2 class="sub-header">英雄管理</h2>
-
+        <router-link  class="btn btn-success" to="/Heroadd">添加</router-link>
         <div class="table-responsive">
           <table class="table table-striped">
             <thead>
@@ -75,7 +75,8 @@ export default {
         .catch((err) => {
           alert('服务器异常' + err)
         })
-    }
+    },
+    // 添加数据
 
   },
  
