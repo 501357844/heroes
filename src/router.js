@@ -10,13 +10,13 @@ import EquipList from './views/equip/EquipList.vue'
 import HeroAdd from './views/Hero/HeroAdd.vue'
 
 const router = new VueRouter({
-
+  linkActiveClass:'active',
     routes:[
       {name:"home", path:"/", redirect:"/heroes"},
       {name:"HeroList", path:'/heroes', component:HeroList},
       {name:"WeaponList", path:'/weapon', component:WeaponList},
       {name:"EquipList", path:'/equip', component:EquipList},
-      {name:"HeroAdd", path:'/Heroadd',component:HeroAdd},
+      {name:"HeroAdd", path:'/heroes/heroadd',component:HeroAdd},
   
     ]
   })

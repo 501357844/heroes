@@ -37,7 +37,7 @@ export default {
                 .then((res) => {
                     const {data,status} = res;
                     if(status === 201) {
-                        this.$router.push({name:'heroes'})
+                        this.$router.push({name:'HeroList'})
                     }else {
                         alert('添加失败')
                     }
@@ -46,6 +46,7 @@ export default {
                     alert('服务器错误' + err)
                 })
         }
+        
     }
 }
 </script>
