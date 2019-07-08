@@ -10,6 +10,7 @@ import EquipList from './views/equip/EquipList.vue'
 const router = new VueRouter({
 
     routes:[
+      {name:"home", path:"/", redirect:"/heroes"},
       {name:"HeroList", path:'/heroes', component:HeroList},
       {name:"WeaponList", path:'/weapon', component:WeaponList},
       {name:"EquipList", path:'/equip', component:EquipList},

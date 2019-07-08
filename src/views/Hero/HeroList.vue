@@ -20,7 +20,7 @@
                 <td>
                   <router-link to="">编辑</router-link>
                   &nbsp;&nbsp;
-                  <a href="javascript:">delete</a>
+                  <a href="javascript:" @click="del(item.id)">删除</a>
                 </td>
               </tr>
             </tbody>
@@ -58,7 +58,24 @@ export default {
         })
     },
     // 删除数据
-    
+    del(id) {
+      if(!confirm('确认删除？')) {
+        return false
+      } 
+      this.axios
+        .delete(`heroes/${id}`)
+        .then((res) => {
+          const {status} = res
+          if(status == 200) {
+            this.loadData()
+          }else {
+            alert('删除失败')
+          }
+        })
+        .catch((err) => {
+          alert('服务器异常' + err)
+        })
+    }
 
   },
  
