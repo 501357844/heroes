@@ -27,7 +27,7 @@
   ],
   "heroes": [
     {
-      "name": "马斯克123",
+      "name": "马斯克",
       "gender": "男",
       "id": 6
     },
@@ -50,11 +50,6 @@
       "name": "aaaa",
       "gender": "男",
       "id": 17
-    },
-    {
-      "name": "wwww",
-      "gender": "男",
-      "id": 19
     }
   ]
 }
